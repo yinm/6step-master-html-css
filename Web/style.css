@@ -6,6 +6,8 @@
   --accent-color: #bf6a7a;
   --dark-color: #2b5566;
   --text-bright-color: #fff;
+  --icon-color: #fff;
+  --icon-bk-color: #ddd;
 }
 
 body {
@@ -77,6 +79,10 @@ body {
   }
 }
 
+.conB .text {
+  text-align: center;
+}
+
 .conB h2 {
   margin-top: 0;
   margin-bottom: 10px;
@@ -99,4 +105,18 @@ body {
 
 .conB a:hover {
   text-decoration: underline;
+}
+
+.conB .icon {
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 20px;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #ddd;
+  background-color: var(--icon-bk-color);
+  color: #fff;
+  color: var(--icon-color);
 }
