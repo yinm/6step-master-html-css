@@ -8,6 +8,7 @@
   --text-bright-color: #fff;
   --icon-color: #fff;
   --icon-bk-color: #ddd;
+  --large-width: 1000px;
 }
 
 body {
@@ -79,7 +80,15 @@ body {
   }
 }
 
+.conB .container {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
 .conB .text {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 60px;
   text-align: center;
 }
 
@@ -119,4 +128,18 @@ body {
   background-color: var(--icon-bk-color);
   color: #fff;
   color: var(--icon-color);
+}
+
+@media (min-width: 768px) {
+  .conB .container {
+    display: flex;
+    max-width: 1000px;
+    max-width: var(--large-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .conB .text {
+    flex: 1;
+  }
 }
