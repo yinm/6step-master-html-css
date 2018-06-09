@@ -76,3 +76,27 @@ body {
     font-size: 24px;
   }
 }
+
+.conB h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.conB p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+.conB a {
+  color: #5d9ab2;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.conB a:hover {
+  text-decoration: underline;
+}
