@@ -5,13 +5,25 @@
   --main-color: #5d9ab2;
   --accent-color: #bf6a7a;
   --dark-color: #2b5566;
+  --text-bright-color: #fff;
 }
 
 body {
+  margin: 0;
   font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
 }
 
 .conA {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 450px;
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(img/fruits.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  color: var(--text-bright-color);
   text-align: center;
 }
 
