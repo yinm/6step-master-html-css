@@ -303,6 +303,10 @@ footer .container {
 }
 
 /* footer A */
+.footA {
+  margin-bottom: 30px;
+}
+
 .footA h2 {
   margin-top: 0;
   margin-bottom: 10px;
@@ -320,4 +324,30 @@ footer .container {
 .footA a {
   color: inherit;
   text-decoration: none;
+}
+
+/* footer B */
+.footB h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: solid 1px currentColor;
+  font-size: 14px;
+}
+
+.footB ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footB a {
+  display: block;
+  padding: 5px;
+  color: inherit;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footB a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }
