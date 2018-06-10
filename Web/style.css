@@ -399,3 +399,36 @@ footer .container {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
 }
+
+/* footer D */
+.footD {
+  margin-top: 20px;
+}
+
+.footD ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footD a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  padding: 0;
+  color: inherit;
+  font-size: 16px;
+  text-decoration: none;
+  border: solid 1px currentColor;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.footD a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
