@@ -151,6 +151,10 @@ body {
   color: var(--text-bright-color);
 }
 
+.conC .text {
+  padding: 20px;
+}
+
 .conC h2 {
   margin-top: 0;
   margin-bottom: 10px;
@@ -191,4 +195,23 @@ body {
   background-image: url(img/note.jpg);
   background-position: center;
   background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .conC .container {
+    display: flex;
+    max-width: 1000px;
+    max-width: var(--large-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .conC .photo {
+    flex: 3;
+  }
+
+  .conC .text {
+    flex: 2;
+    padding: 50px;
+  }
 }
