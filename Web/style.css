@@ -143,3 +143,52 @@ body {
     flex: 1;
   }
 }
+
+.conC {
+  background-color: #5d9ab2;
+  background-color: var(--main-color);
+  color: #fff;
+  color: var(--text-bright-color);
+}
+
+.conC h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.conC p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+.conC a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  border: solid 3px currentColor;
+  border-radius: 6px;
+  background-color: #bf6a7a;
+  background-color: var(--accent-color);
+  color: #fff;
+  color: var(--text-bright-color);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.conC a:hover {
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
+}
+
+.conC .photo {
+  min-height: 200px;
+  background-image: url(img/note.jpg);
+  background-position: center;
+  background-size: cover;
+}
