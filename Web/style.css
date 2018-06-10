@@ -271,6 +271,7 @@ body {
 @media (min-width: 768px) {
   .conD .container {
     display: flex;
+    flex-direction: row-reverse;
     max-width: 1000px;
     max-width: var(--large-width);
     margin-left: auto;
@@ -280,11 +281,11 @@ body {
   }
 
   .conD .photo {
-    flex: 3;
+    flex: 0 0 400px;
   }
 
   .conD .text {
-    flex: 2;
+    flex: 1;
     padding: 50px;
   }
 }
