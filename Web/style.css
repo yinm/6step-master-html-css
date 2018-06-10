@@ -4,7 +4,7 @@
 :root {
   --main-color: #5d9ab2;
   --accent-color: #bf6a7a;
-  --dark-color: #2b5566;
+  --dark-main-color: #2b5566;
   --text-bright-color: #fff;
   --icon-color: #fff;
   --icon-bk-color: #ddd;
@@ -288,6 +288,18 @@ body {
     flex: 1;
     padding: 50px;
   }
+}
+
+/* footer */
+footer {
+  color: #fff;
+  color: var(--text-bright-color);
+  background-color: #2b5566;
+  background-color: var(--dark-main-color);
+}
+
+footer .container {
+  padding: 40px 20px;
 }
 
 /* footer A */
