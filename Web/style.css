@@ -217,12 +217,19 @@ body {
 }
 
 /* contents D */
+.conD {
+  background-image: url(img/life.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
 .conD .container {
   padding-top: 2px;
 }
 
 .conD .text {
   padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .conD h2 {
@@ -263,7 +270,7 @@ body {
 
 .conD .photo {
   min-height: 200px;
-  background-image: url(img/life.jpg);
+  background-image: none;
   background-position: center;
   background-size: cover;
 }
@@ -271,7 +278,6 @@ body {
 @media (min-width: 768px) {
   .conD .container {
     display: flex;
-    flex-direction: row-reverse;
     max-width: 1000px;
     max-width: var(--large-width);
     margin-left: auto;
@@ -281,11 +287,11 @@ body {
   }
 
   .conD .photo {
-    flex: 0 0 400px;
+    flex: 3;
   }
 
   .conD .text {
-    flex: 1;
+    flex: 2;
     padding: 50px;
   }
 }
