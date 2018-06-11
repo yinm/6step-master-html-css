@@ -516,6 +516,10 @@ header {
   .headC:hover {
     opacity: 0.3;
   }
+
+  .headB {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
