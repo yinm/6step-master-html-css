@@ -476,3 +476,19 @@ header {
 .headB a:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+@media (min-width: 768px) {
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    max-width: var(--large-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .headB ul {
+    display: flex;
+  }
+}
