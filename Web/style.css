@@ -581,3 +581,30 @@ header {
 .post img {
   max-width: 100%;
 }
+
+/* contents-page breadcrumb */
+.bread ol {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bread a {
+  display: block;
+  padding: 5px;
+  color: inherit;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.bread a::after {
+  margin-left: 10px;
+  content: '\f054';
+  font-family: 'FontAwesome';
+  opacity: 0.3;
+}
+
+.bread a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
