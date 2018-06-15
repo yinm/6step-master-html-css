@@ -933,3 +933,20 @@ header {
     flex: 1 1 50%;
   }
 }
+
+/* arrange head-color */
+.head-color {
+  background-color: #5d9ab2;
+  background-color: var(--main-color);
+  color: #fff;
+  color: var(--text-bright-color);
+}
+
+.head-color .headA {
+  background-color: transparent;
+  color: inherit;
+}
+
+.head-color .headC {
+  color: inherit;
+}
