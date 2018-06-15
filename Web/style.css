@@ -973,3 +973,13 @@ header {
     background-color: rgba(0, 0, 0, 0.6);
   }
 }
+
+/* arrange head-fixed */
+.head-fixed,
+.nohero .head-fixed {
+  position: fixed;
+}
+
+.nohero .head-fixed + * {
+  margin-top: 70px;
+}
