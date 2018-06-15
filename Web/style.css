@@ -751,7 +751,25 @@ header {
 }
 
 /* listA */
+.listA h1 {
+  text-align: center;
+}
+
+.listA .container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  max-width: var(--large-width);
+  margin: 30px auto;
+}
+
+.listA article {
+  flex: 1 1 300px;
+  display: flex;
+}
+
 .listA a {
+  flex: 1;
   margin: 10px;
   display: block;
   border: solid 1px #ddd;
