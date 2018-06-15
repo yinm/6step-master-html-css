@@ -800,3 +800,66 @@ header {
   font-size: 14px;
   opacity: 0.8;
 }
+
+/* listB */
+.listB h1 {
+  text-align: center;
+}
+
+.listB .container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  max-width: var(--large-width);
+  margin: 30px auto;
+}
+
+.listB article {
+  flex: 1 1 384px;
+  display: flex;
+}
+
+.listB a {
+  flex: 1;
+  margin: 10px;
+  display: flex;
+  border: solid 1px #ddd;
+  border: solid 1px var(--gray-color);
+  color: inherit;
+  text-decoration: none;
+}
+
+.listB a:hover {
+  opacity: 0.8;
+}
+
+.listB .photo {
+  flex: 2;
+  min-height: 0;
+  background-position: center;
+  background-size: cover;
+}
+
+.listB .text {
+  flex: 3;
+  margin: 10px;
+}
+
+.listB h2 {
+  font-size: 18px;
+}
+
+.listB p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+@media (max-width: 384px) {
+  .listB .photo {
+    flex: 1;
+  }
+
+  .listB p {
+    display: none;
+  }
+}
