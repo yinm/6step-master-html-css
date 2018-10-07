@@ -16,7 +16,7 @@ export default {
 
 <style>
 body {
-  font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
   margin: 0;
+  font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
 }
 </style>

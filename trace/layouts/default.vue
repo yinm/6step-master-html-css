@@ -5,4 +5,7 @@
 </template>
 
 <style>
+:root {
+  --text-bright-color: #fff;
+}
 </style>
