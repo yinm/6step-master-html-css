@@ -42,22 +42,26 @@
 
   .conA p {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     font-size: 18px;
   }
 
   .conA a {
-    padding: 13px 28px;
-    border: 3px solid var(--text-bright-color);
-    border-radius: 5px;
-    background-color: #bf6a7a;
-    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px; border: solid 3px currentColor;
+    border-radius: 6px;
+    background-color: var(--accent-color);
     color: var(--text-bright-color);
-    font-size: 0.9rem;
+    font-size: 14px;
+    text-decoration: none;
   }
 
   .conA a:hover {
-    background-color: rgba(191, 106, 122, 0.8);
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    );
   }
 
   @media (min-width: 768px) {
