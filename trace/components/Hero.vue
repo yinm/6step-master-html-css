@@ -27,7 +27,7 @@
   }
 
   .conA img {
-    width: 17.5vw;
+    width: 20%;
   }
 
   .conA h1 {
@@ -46,10 +46,6 @@
   }
 
   @media (min-width: 768px) {
-    .conA img {
-      width: 133px;
-    }
-
     .conA h1 {
       font-size: 115px;
     }
