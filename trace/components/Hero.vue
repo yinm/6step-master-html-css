@@ -1,6 +1,9 @@
 <template>
   <section class="conA">
     <div class="container">
+      <img
+        src="/logo.svg"
+        alt="">
       <h1>LOGGER</h1>
       <p>美味しく楽しくライフログ</p>
     </div>
@@ -23,6 +26,10 @@
     color: var(--text-bright-color);
   }
 
+  .conA img {
+    width: 17.5vw;
+  }
+
   .conA h1 {
     margin-top: 0;
     margin-bottom: 10px;
@@ -39,6 +46,10 @@
   }
 
   @media (min-width: 768px) {
+    .conA img {
+      width: 133px;
+    }
+
     .conA h1 {
       font-size: 115px;
     }
