@@ -6,6 +6,7 @@
         alt="">
       <h1>LOGGER</h1>
       <p>美味しく楽しくライフログ</p>
+      <a href="#">ライフログを始める</a>
     </div>
   </section>
 </template>
@@ -41,8 +42,22 @@
 
   .conA p {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
     font-size: 18px;
+  }
+
+  .conA a {
+    padding: 13px 28px;
+    border: 3px solid var(--text-bright-color);
+    border-radius: 5px;
+    background-color: #bf6a7a;
+    text-decoration: none;
+    color: var(--text-bright-color);
+    font-size: 0.9rem;
+  }
+
+  .conA a:hover {
+    background-color: rgba(191, 106, 122, 0.8);
   }
 
   @media (min-width: 768px) {
