@@ -15,5 +15,7 @@ export default {
 </script>
 
 <style>
-
+body {
+  font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
+}
 </style>

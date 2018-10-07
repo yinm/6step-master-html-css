@@ -1,32 +1,36 @@
 <template>
-  <div class="hero-container">
-    <h1 class="hero-title">LOGGER</h1>
-    <p class="hero-subtitle">美味しく楽しくライフログ</p>
-  </div>
+  <section class="conA">
+    <div class="container">
+      <h1>LOGGER</h1>
+      <p>美味しく楽しくライフログ</p>
+    </div>
+  </section>
 </template>
 
 <style scoped>
-  .hero-title {
-    margin: 0;
+  .conA {
     text-align: center;
-    font-size: 7.2rem;
-    font-family: "Hiragino Kaku Gothic Pro";
   }
 
-  .hero-subtitle {
-    margin-top: 10px;
+  .conA h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 15vw;
+  }
+
+  .conA p {
+    margin-top: 0;
     margin-bottom: 0;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: "Hiragino Kaku Gothic Pro";
+    font-size: 18px;
   }
 
-  @media (max-width: 768px) {
-    .hero-title {
-      font-size: 15vw;
+  @media (min-width: 768px) {
+    .conA h1 {
+      font-size: 115px;
     }
-    .hero-subtitle {
-      font-size: 3.5vw;
+
+    .conA p {
+      font-size: 24px;
     }
   }
 </style>
