@@ -18,8 +18,9 @@
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 15vw;
-    font-family: Montserrat;
-    letter-spacing: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2em;
+    margin-left: 0.2em;
   }
 
   .conA p {
