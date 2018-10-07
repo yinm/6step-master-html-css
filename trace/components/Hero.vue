@@ -8,6 +8,8 @@
 </template>
 
 <style scoped>
+  @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
   .conA {
     text-align: center;
   }
@@ -16,6 +18,8 @@
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 15vw;
+    font-family: Montserrat;
+    letter-spacing: 1.5rem;
   }
 
   .conA p {
