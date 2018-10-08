@@ -1,6 +1,7 @@
 <template>
   <section class="conB">
     <div class="container">
+      <i class="far fa-chart-bar"/>
       <div class="text">
         <h2>ライフログって何？</h2>
         <p>日常のあれこれを記録していくライフログ。いろいろなものが見えてきます。</p>
