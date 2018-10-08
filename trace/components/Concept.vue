@@ -1,12 +1,12 @@
 <template>
   <section class="conB">
     <div class="container">
-      <i class="far fa-chart-bar chart"/>
       <div class="text">
+        <i class="far fa-chart-bar icon"/>
         <h2>ライフログって何？</h2>
         <p>日常のあれこれを記録していくライフログ。いろいろなものが見えてきます。</p>
         <a href="#">
-          MORE...<i class="fas fa-chevron-right chevron" />
+          MORE...<i class="fas fa-chevron-right" />
         </a>
       </div>
     </div>
@@ -14,21 +14,19 @@
 </template>
 
 <style scoped>
-  .conB {
+  .conB .text {
     text-align: center;
   }
 
-  .conB .chart {
+  .conB .icon {
     margin-bottom: 20px;
-    padding: 15px;
+    font-size: 40px;
+    width: 2em;
+    line-height: 2em;
     border-radius: 50%;
-    background-color: #ddd;
-    font-size: 3rem;
-    color: #fff;
-  }
-
-  .conB .chevron {
-    margin-left: 5px;
+    text-align: center;
+    background-color: var(--icon-bk-color);
+    color: var(--icon-color);
   }
 
   .conB h2 {
