@@ -11,5 +11,6 @@
   --text-bright-color: #fff;
   --icon-color: #fff;
   --icon-bk-color: #ddd;
+  --large-width: 1000px;
 }
 </style>

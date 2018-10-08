@@ -31,17 +31,15 @@
 
 <style scoped>
   .conB .container {
-    display: flex;
-    margin: 80px 20px;
+    padding-top: 80px;
+    padding-bottom: 20px;
   }
 
   .conB .text {
-    margin-right: 40px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    padding-left: 20px;
     text-align: center;
-  }
-
-  .conB .text:last-of-type {
-    margin-right: 0;
   }
 
   .conB .icon {
@@ -78,14 +76,16 @@
     text-decoration: underline;
   }
 
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     .conB .container {
-      display: block;
+      display: flex;
+      max-width: var(--large-width);
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .conB .text {
-      margin-right: 0;
-      margin-bottom: 60px;
+      flex: 1;
     }
   }
 </style>
