@@ -9,13 +9,39 @@
           MORE...<i class="fas fa-chevron-right" />
         </a>
       </div>
+      <div class="text">
+        <i class="fas fa-cogs icon" />
+        <h2>必要なのはスマホだけ</h2>
+        <p>ライフログを始めるのに必要なのはスマホだけ。いつでもスタートできます。</p>
+        <a href="#">
+          MORE...<i class="fas fa-chevron-right" />
+        </a>
+      </div>
+      <div class="text">
+        <i class="fas fa-rocket icon" />
+        <h2>SNSとの連携も簡単</h2>
+        <p>TwitterやFacebookといったSNSと連携して、簡単にログを共有することができます。</p>
+        <a href="#">
+          MORE...<i class="fas fa-chevron-right" />
+        </a>
+      </div>
     </div>
   </section>
 </template>
 
 <style scoped>
+  .conB .container {
+    display: flex;
+    margin: 80px 20px;
+  }
+
   .conB .text {
+    margin-right: 40px;
     text-align: center;
+  }
+
+  .conB .text:last-of-type {
+    margin-right: 0;
   }
 
   .conB .icon {
@@ -50,5 +76,16 @@
 
   .conB a:hover {
     text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .conB .container {
+      display: block;
+    }
+
+    .conB .text {
+      margin-right: 0;
+      margin-bottom: 60px;
+    }
   }
 </style>
