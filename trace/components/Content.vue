@@ -68,18 +68,17 @@
     .conC .container {
       display: flex;
       max-width: var(--large-width);
-      margin-right: auto;
       margin-left: auto;
+      margin-right: auto;
     }
 
     .conC .photo {
-      min-height: 330px;
       flex: 3;
     }
 
     .conC .text {
-      padding: 50px;
       flex: 2;
+      padding: 50px;
     }
   }
 </style>
