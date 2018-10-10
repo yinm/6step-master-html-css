@@ -2,12 +2,14 @@
   <section class="conC">
     <div class="container">
       <div class="photo" />
-      <h2>面倒な設定やデータの管理は全部おまかせ</h2>
-      <p>ライフログでつまずきがちな面倒な設定やデータ管理の煩わしさはありません。他のログアプリとの連携もワンクリックで完了です。</p>
-      <a href="#">
-        詳しい設定方法を確認する
-        <i class="fas fa-chevron-right" />
-      </a>
+      <div class="text">
+        <h2>面倒な設定やデータの管理は全部おまかせ</h2>
+        <p>ライフログでつまずきがちな面倒な設定やデータ管理の煩わしさはありません。他のログアプリとの連携もワンクリックで完了です。</p>
+        <a href="#">
+          詳しい設定方法を確認する
+          <i class="fas fa-chevron-right" />
+        </a>
+      </div>
     </div>
   </section>
 </template>
@@ -56,5 +58,28 @@
     background-image: url("/note.jpg");
     background-position: center;
     background-size: cover;
+  }
+
+  .conC .text {
+    padding: 20px;
+  }
+
+  @media (min-width: 768px) {
+    .conC .container {
+      display: flex;
+      max-width: var(--large-width);
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .conC .photo {
+      min-height: 330px;
+      flex: 3;
+    }
+
+    .conC .text {
+      padding: 50px;
+      flex: 2;
+    }
   }
 </style>
