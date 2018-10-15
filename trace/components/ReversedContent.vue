@@ -17,8 +17,12 @@
 </template>
 
 <style scoped>
-  .conD {
-    margin: 40px 0;
+  .conD .container {
+    padding-top: 2px;
+  }
+
+  .conD .text {
+    padding: 20px;
   }
 
   .conD h2 {
@@ -32,22 +36,17 @@
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.8;
-    opacity: 0.8;
-  }
-
-  .conD .cover {
-    margin-top: 20px;
-    padding: 3px;
-    border: solid 1px #888;
-    border-radius: 6px;
-    width: 256px;
+    opacity: 0.8
   }
 
   .conD a {
     display: inline-block;
+    margin-top: 20px;
     padding: 10px 30px;
-    background-color: var(--accent-color);
+    box-shadow: 0 0 0 1px #888;
+    border: solid 3px currentColor;
     border-radius: 6px;
+    background-color: var(--accent-color);
     color: var(--text-bright-color);
     font-size: 14px;
     text-decoration: none;
@@ -67,16 +66,14 @@
     background-size: cover;
   }
 
-  .conD .text {
-    padding: 20px;
-  }
-
   @media (min-width: 768px) {
     .conD .container {
       display: flex;
       max-width: var(--large-width);
       margin-left: auto;
       margin-right: auto;
+      padding-top: 40px;
+      padding-bottom: 40px;
     }
 
     .conD .photo {
