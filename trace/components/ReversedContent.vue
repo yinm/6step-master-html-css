@@ -78,12 +78,11 @@
     }
 
     .conD .photo {
-      flex: 3;
-      max-width: 400px;
+      flex: 0 0 400px;
     }
 
     .conD .text {
-      flex: 2;
+      flex: 1;
       padding: 50px;
     }
   }
