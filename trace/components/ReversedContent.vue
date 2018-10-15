@@ -69,6 +69,7 @@
   @media (min-width: 768px) {
     .conD .container {
       display: flex;
+      flex-direction: row-reverse;
       max-width: var(--large-width);
       margin-left: auto;
       margin-right: auto;
@@ -78,6 +79,7 @@
 
     .conD .photo {
       flex: 3;
+      max-width: 400px;
     }
 
     .conD .text {
