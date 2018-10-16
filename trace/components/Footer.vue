@@ -15,10 +15,13 @@
 <style scoped>
   @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-  .footA {
-    padding: 50px 20px;
+  footer {
     color: var(--text-bright-color);
     background-color: var(--dark-main-color);
+  }
+
+  footer .container {
+    padding: 40px 20px;
   }
 
   .footA h2 {
