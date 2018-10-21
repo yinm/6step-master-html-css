@@ -1,6 +1,7 @@
 <template>
   <footer>
     <div class="container">
+
       <div class="footA">
         <h2>LOGGER</h2>
         <p>
@@ -41,6 +42,10 @@
           </ul>
         </div>
       </nav>
+
+      <div class="footC">
+        © LOGGER corp. All rights reserved.
+      </div>
 
     </div>
   </footer>
@@ -110,9 +115,32 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
 
+  .footC {
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+
   @media (min-width: 768px) {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: var(--large-width);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .footA {
+      flex: 0 0 40%;
+    }
+
     .footB {
       display: flex;
+      flex: 0 0 60%;
+    }
+
+    .footC {
+      flex: 0 0 100%;
     }
 
     .footB div {
