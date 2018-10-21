@@ -14,7 +14,7 @@
             <li>
               <a href="#">
                 <i
-                  class="fab fa-twitter"
+                  class="fab fa-twitter icon"
                   aria-hidden="true"
                 />
                 <span class="sr-only">Twitter</span>
@@ -24,7 +24,7 @@
             <li>
               <a href="#">
                 <i
-                  class="fab fa-facebook-f"
+                  class="fab fa-facebook-f icon"
                   aria-hidden="true"
                 />
                 <span class="sr-only">Facebook</span>
@@ -34,7 +34,7 @@
             <li>
               <a href="#">
                 <i
-                  class="fab fa-google-plus-g"
+                  class="fab fa-google-plus-g icon"
                   aria-hidden="true"
                 />
                 <span class="sr-only">Google Plus</span>
@@ -45,7 +45,7 @@
             <li>
               <a href="#">
                 <i
-                  class="fab fa-instagram"
+                  class="fab fa-instagram icon"
                   aria-hidden="true"
                 />
                 <span class="sr-only">Instagram</span>
@@ -55,7 +55,7 @@
             <li>
               <a href="#">
                 <i
-                  class="fab fa-youtube"
+                  class="fab fa-youtube icon"
                   aria-hidden="true"
                 />
                 <span class="sr-only">YouTube</span>
@@ -68,6 +68,7 @@
       <nav class="footB">
         <div>
           <h3>ABOUT</h3>
+
           <ul>
             <li><a href="#">設立</a></li>
             <li><a href="#">所在地</a></li>
@@ -174,6 +175,27 @@
     font-size: 12px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+  }
+
+  .footD ul {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+  }
+
+  .footD li {
+    margin-right: 8px;
+  }
+
+  .footD .icon {
+    font-size: 16px;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    border: 1px solid currentColor;
+    border-radius: 50%;
   }
 
   @media (min-width: 768px) {
