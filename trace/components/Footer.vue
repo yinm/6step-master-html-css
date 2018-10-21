@@ -119,8 +119,8 @@
       flex: 1;
     }
 
-    .footB div:not(:last-child) {
-      margin-right: 40px;
+    .footB div:not(:first-child) {
+      margin-left: 40px;
     }
   }
 </style>
