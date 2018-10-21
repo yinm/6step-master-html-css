@@ -8,11 +8,67 @@
           〒000-0000 東京都中央区杉並3-3-3-403<br>
           <a href="#">http://logger.nett/</a>
         </p>
+
+        <nav class="footD">
+          <ul>
+            <li>
+              <a href="#">
+                <i
+                  class="fab fa-twitter"
+                  aria-hidden="true"
+                />
+                <span class="sr-only">Twitter</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i
+                  class="fab fa-facebook-f"
+                  aria-hidden="true"
+                />
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i
+                  class="fab fa-google-plus-g"
+                  aria-hidden="true"
+                />
+                <span class="sr-only">Google Plus</span>
+              </a>
+            </li>
+
+
+            <li>
+              <a href="#">
+                <i
+                  class="fab fa-instagram"
+                  aria-hidden="true"
+                />
+                <span class="sr-only">Instagram</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i
+                  class="fab fa-youtube"
+                  aria-hidden="true"
+                />
+                <span class="sr-only">YouTube</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
 
       <nav class="footB">
         <div>
           <h3>ABOUT</h3>
+
           <ul>
             <li><a href="#">設立</a></li>
             <li><a href="#">所在地</a></li>
@@ -119,6 +175,35 @@
     font-size: 12px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+  }
+
+  .footD {
+    margin-top: 20px;
+  }
+
+  .footD ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .footD a {
+    display: block;
+    margin-right: 8px;
+    padding: 0;
+    color: inherit;
+    font-size: 16px;
+    text-decoration: none;
+    border: solid 1px currentColor;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  .footD a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   @media (min-width: 768px) {
