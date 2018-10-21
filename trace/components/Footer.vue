@@ -43,7 +43,7 @@
       </nav>
 
       <div class="footC">
-        <p>© LOGGER corp. All rights reserved.</p>
+        © LOGGER corp. All rights reserved.
       </div>
 
     </div>
@@ -114,11 +114,10 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
 
-  .footC p {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
+  .footC {
     font-size: 12px;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
   }
 
   @media (min-width: 768px) {
