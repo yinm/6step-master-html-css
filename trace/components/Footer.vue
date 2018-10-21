@@ -1,46 +1,49 @@
 <template>
   <footer>
     <div class="container">
-      <div class="footA">
-        <h2>LOGGER</h2>
-        <p>
-          〒000-0000 東京都中央区杉並3-3-3-403<br>
-          <a href="#">http://logger.nett/</a>
-        </p>
+
+      <div class="content-container">
+        <div class="footA">
+          <h2>LOGGER</h2>
+          <p>
+            〒000-0000 東京都中央区杉並3-3-3-403<br>
+            <a href="#">http://logger.nett/</a>
+          </p>
+        </div>
+
+        <nav class="footB">
+          <div>
+            <h3>ABOUT</h3>
+            <ul>
+              <li><a href="#">設立</a></li>
+              <li><a href="#">所在地</a></li>
+              <li><a href="#">地図</a></li>
+              <li><a href="#">スタッフ</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>SUPPORT</h3>
+            <ul>
+              <li><a href="#">ダウンロード</a></li>
+              <li><a href="#">マニュアル</a></li>
+              <li><a href="#">よくある質問</a></li>
+              <li><a href="#">お問い合わせ</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>CONTENTS</h3>
+            <ul>
+              <li><a href="#">お知らせ</a></li>
+              <li><a href="#">ビジネス</a></li>
+              <li><a href="#">プロフィール</a></li>
+              <li><a href="#">開発者</a></li>
+              <li><a href="#">ブログ</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
-
-      <nav class="footB">
-        <div>
-          <h3>ABOUT</h3>
-          <ul>
-            <li><a href="#">設立</a></li>
-            <li><a href="#">所在地</a></li>
-            <li><a href="#">地図</a></li>
-            <li><a href="#">スタッフ</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3>SUPPORT</h3>
-          <ul>
-            <li><a href="#">ダウンロード</a></li>
-            <li><a href="#">マニュアル</a></li>
-            <li><a href="#">よくある質問</a></li>
-            <li><a href="#">お問い合わせ</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3>CONTENTS</h3>
-          <ul>
-            <li><a href="#">お知らせ</a></li>
-            <li><a href="#">ビジネス</a></li>
-            <li><a href="#">プロフィール</a></li>
-            <li><a href="#">開発者</a></li>
-            <li><a href="#">ブログ</a></li>
-          </ul>
-        </div>
-      </nav>
 
       <div class="footC">
         © LOGGER corp. All rights reserved.
@@ -121,8 +124,20 @@
   }
 
   @media (min-width: 768px) {
+    .content-container {
+      display: flex;
+      max-width: var(--large-width);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .footA {
+      flex: 1 30px;
+    }
+
     .footB {
       display: flex;
+      flex: 1.63;
     }
 
     .footB div {
