@@ -19,6 +19,27 @@
             <li><a href="#">スタッフ</a></li>
           </ul>
         </div>
+
+        <div>
+          <h3>SUPPORT</h3>
+          <ul>
+            <li><a href="#">ダウンロード</a></li>
+            <li><a href="#">マニュアル</a></li>
+            <li><a href="#">よくある質問</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>CONTENTS</h3>
+          <ul>
+            <li><a href="#">お知らせ</a></li>
+            <li><a href="#">ビジネス</a></li>
+            <li><a href="#">プロフィール</a></li>
+            <li><a href="#">開発者</a></li>
+            <li><a href="#">ブログ</a></li>
+          </ul>
+        </div>
       </nav>
 
     </div>
@@ -60,6 +81,10 @@
     text-decoration: none;
   }
 
+  .footB div {
+    margin-bottom: 20px;
+  }
+
   .footB h3 {
     margin-top: 0;
     margin-bottom: 10px;
@@ -83,5 +108,19 @@
 
   .footB a:hover {
     background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  @media (min-width: 768px) {
+    .footB {
+      display: flex;
+    }
+
+    .footB div {
+      flex: 1;
+    }
+
+    .footB div:not(:last-child) {
+      margin-right: 40px;
+    }
   }
 </style>
