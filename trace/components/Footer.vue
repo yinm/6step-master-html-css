@@ -8,6 +8,14 @@
           〒000-0000 東京都中央区杉並3-3-3-403<br>
           <a href="#">http://logger.nett/</a>
         </p>
+
+        <ul>
+          <li><i class="fab fa-twitter" /></li>
+          <li><i class="fab fa-facebook-f" /></li>
+          <li><i class="fab fa-google-plus-g" /></li>
+          <li><i class="fab fa-instagram" /></li>
+          <li><i class="fab fa-youtube" /></li>
+        </ul>
       </div>
 
       <nav class="footB">
