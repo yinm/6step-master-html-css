@@ -9,13 +9,60 @@
           <a href="#">http://logger.nett/</a>
         </p>
 
-        <ul>
-          <li><i class="fab fa-twitter" /></li>
-          <li><i class="fab fa-facebook-f" /></li>
-          <li><i class="fab fa-google-plus-g" /></li>
-          <li><i class="fab fa-instagram" /></li>
-          <li><i class="fab fa-youtube" /></li>
-        </ul>
+        <nav class="footD">
+          <ul>
+            <li>
+              <a href="#">
+                <i
+                  class="fab fa-twitter"
+                  aria-hidden="true"
+                />
+                <span class="sr-only">Twitter</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i
+                  class="fab fa-facebook-f"
+                  aria-hidden="true"
+                />
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i
+                  class="fab fa-google-plus-g"
+                  aria-hidden="true"
+                />
+                <span class="sr-only">Google Plus</span>
+              </a>
+            </li>
+
+
+            <li>
+              <a href="#">
+                <i
+                  class="fab fa-instagram"
+                  aria-hidden="true"
+                />
+                <span class="sr-only">Instagram</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i
+                  class="fab fa-youtube"
+                  aria-hidden="true"
+                />
+                <span class="sr-only">YouTube</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
 
       <nav class="footB">
