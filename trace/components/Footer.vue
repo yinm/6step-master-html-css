@@ -42,6 +42,10 @@
         </div>
       </nav>
 
+      <div class="footC">
+        <p>© LOGGER corp. All rights reserved.</p>
+      </div>
+
     </div>
   </footer>
 </template>
@@ -108,6 +112,13 @@
 
   .footB a:hover {
     background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .footC p {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-align: center;
   }
 
   @media (min-width: 768px) {
