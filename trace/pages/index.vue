@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Header />
     <Hero />
     <Concept />
     <Content />
@@ -12,6 +13,7 @@
 import Hero from '~/components/Hero.vue'
 import Concept from '~/components/Concept.vue'
 import Content from '~/components/Content.vue'
+import Header from '~/components/Header.vue'
 import ReversedContent from '~/components/ReversedContent.vue'
 import Footer from '~/components/Footer.vue'
 
@@ -20,6 +22,7 @@ export default {
     Hero,
     Concept,
     Content,
+    Header,
     ReversedContent,
     Footer
   }
