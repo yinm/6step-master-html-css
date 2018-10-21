@@ -14,7 +14,7 @@
             <li>
               <a href="#">
                 <i
-                  class="fab fa-twitter icon"
+                  class="fab fa-twitter"
                   aria-hidden="true"
                 />
                 <span class="sr-only">Twitter</span>
@@ -24,7 +24,7 @@
             <li>
               <a href="#">
                 <i
-                  class="fab fa-facebook-f icon"
+                  class="fab fa-facebook-f"
                   aria-hidden="true"
                 />
                 <span class="sr-only">Facebook</span>
@@ -34,7 +34,7 @@
             <li>
               <a href="#">
                 <i
-                  class="fab fa-google-plus-g icon"
+                  class="fab fa-google-plus-g"
                   aria-hidden="true"
                 />
                 <span class="sr-only">Google Plus</span>
@@ -45,7 +45,7 @@
             <li>
               <a href="#">
                 <i
-                  class="fab fa-instagram icon"
+                  class="fab fa-instagram"
                   aria-hidden="true"
                 />
                 <span class="sr-only">Instagram</span>
@@ -55,7 +55,7 @@
             <li>
               <a href="#">
                 <i
-                  class="fab fa-youtube icon"
+                  class="fab fa-youtube"
                   aria-hidden="true"
                 />
                 <span class="sr-only">YouTube</span>
@@ -177,25 +177,33 @@
     font-family: 'Montserrat', sans-serif;
   }
 
-  .footD ul {
+  .footD {
     margin-top: 20px;
-    margin-bottom: 0;
-    padding: 0;
-    list-style-type: none;
+  }
+
+  .footD ul {
     display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
-  .footD li {
+  .footD a {
+    display: block;
     margin-right: 8px;
-  }
-
-  .footD .icon {
+    padding: 0;
+    color: inherit;
     font-size: 16px;
+    text-decoration: none;
+    border: solid 1px currentColor;
     width: 2em;
     line-height: 2em;
-    text-align: center;
-    border: 1px solid currentColor;
     border-radius: 50%;
+    text-align: center;
+  }
+
+  .footD a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   @media (min-width: 768px) {
