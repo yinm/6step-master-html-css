@@ -67,4 +67,24 @@
   .headB a:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
+
+  @media (min-width: 768px) {
+    .container {
+      display: flex;
+      max-width: var(--large-width);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .headA {
+      margin-right: auto;
+    }
+
+    .headB ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  }
 </style>
