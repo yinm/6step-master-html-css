@@ -71,20 +71,15 @@
   @media (min-width: 768px) {
     .container {
       display: flex;
+      align-items: center;
+      justify-content: space-between;
       max-width: var(--large-width);
       margin-left: auto;
       margin-right: auto;
     }
 
-    .headA {
-      margin-right: auto;
-    }
-
     .headB ul {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
     }
   }
 </style>
