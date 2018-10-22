@@ -1,15 +1,21 @@
 <template>
   <header>
     <div class="container">
-      <a
-        href="index.html"
-        class="headA"
-      >
-        LOGGER
-      </a>
+      <div class="container-small">
+        <a
+          href="index.html"
+          class="headA"
+        >
+          LOGGER
+        </a>
 
-      <div class="headC">
-        <i class="fas fa-bars" />
+        <button
+          type="button"
+          class="headC"
+        >
+          <i class="fas fa-bars" />
+          <span class="sr-only">MENU</span>
+        </button>
       </div>
 
       <nav class="headB">
@@ -72,16 +78,27 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
 
-  .headC {
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    font-size: 25px;
-    color: #777;
-  }
+  @media (max-width: 767px) {
+    .container-small {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-  .headC:hover {
-    color: #aaa;
+    .headC {
+      margin-right: 10px;
+      padding: 0;
+      border: none;
+      outline: none;
+      background: none;
+      font-size: 28px;
+      opacity: 0.5;
+      cursor: pointer;
+    }
+
+    .headC:hover {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: 768px) {
