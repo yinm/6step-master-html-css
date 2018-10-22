@@ -8,20 +8,22 @@
         LOGGER
       </a>
 
-      <ul class="header-list">
-        <li>
-          <a href="#">トップ</a>
-        </li>
-        <li>
-          <a href="#">コンテンツ</a>
-        </li>
-        <li>
-          <a href="#">ABOUT</a>
-        </li>
-        <li>
-          <a href="#">お問い合わせ</a>
-        </li>
-      </ul>
+      <nav class="headB">
+        <ul>
+          <li>
+            <a href="#">トップ</a>
+          </li>
+          <li>
+            <a href="#">コンテンツ</a>
+          </li>
+          <li>
+            <a href="#">ABOUT</a>
+          </li>
+          <li>
+            <a href="#">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 </template>
@@ -48,21 +50,21 @@
     text-decoration: none;
   }
 
-  .header-list {
+  .headB ul {
     margin: 0;
     padding: 0;
-    list-style-type: none;
+    list-style: none;
   }
 
-  .header-list a {
+  .headB a {
     display: block;
     padding: 15px;
-    text-decoration: none;
     color: inherit;
     font-size: 12px;
+    text-decoration: none;
   }
 
-  .header-list a:hover {
+  .headB a:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
 </style>
