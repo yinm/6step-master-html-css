@@ -8,6 +8,10 @@
         LOGGER
       </a>
 
+      <div class="headC">
+        <i class="fas fa-bars" />
+      </div>
+
       <nav class="headB">
         <ul>
           <li>
@@ -68,6 +72,18 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
 
+  .headC {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    font-size: 25px;
+    color: #777;
+  }
+
+  .headC:hover {
+    color: #aaa;
+  }
+
   @media (min-width: 768px) {
     .container {
       display: flex;
@@ -80,6 +96,10 @@
 
     .headB ul {
       display: flex;
+    }
+
+    .headC {
+      display: none;
     }
   }
 </style>
