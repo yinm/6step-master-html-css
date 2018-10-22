@@ -12,13 +12,17 @@
         <button
           type="button"
           class="headC"
+          @click="onClick"
         >
           <i class="fas fa-bars" />
           <span class="sr-only">MENU</span>
         </button>
       </div>
 
-      <nav class="headB">
+      <nav
+        v-if="!isHidden"
+        class="headB"
+      >
         <ul>
           <li>
             <a href="#">トップ</a>
@@ -37,6 +41,22 @@
     </div>
   </header>
 </template>
+
+<script>
+  export default {
+    data() {
+      return {
+        isHidden: true,
+      }
+    },
+
+    methods: {
+      onClick() {
+        this.isHidden = !this.isHidden
+      }
+    }
+  }
+</script>
 
 <style scoped>
   header {
