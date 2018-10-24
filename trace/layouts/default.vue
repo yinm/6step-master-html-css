@@ -12,6 +12,7 @@
   --text-bright-color: #fff;
   --icon-color: #fff;
   --icon-bk-color: #ddd;
+  --gray-color: #ddd;
   --middle-width: 800px;
   --large-width: 1000px;
 }

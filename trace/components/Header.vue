@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header :class="{nohero: !isHeroImage}">
     <div class="container">
       <div class="container-small">
         <a
@@ -30,6 +30,17 @@
   </header>
 </template>
 
+<script>
+  export default {
+    props: {
+      isHeroImage: {
+        type: Boolean,
+        default: true,
+      }
+    }
+  }
+</script>
+
 <style scoped>
   header {
     position: absolute;
@@ -38,6 +49,11 @@
     z-index: 100;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .nohero {
+    position: static;
+    border-bottom: solid 1px var(--gray-color);
   }
 
   .headA {

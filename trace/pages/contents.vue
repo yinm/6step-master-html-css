@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header />
+    <Header :isHeroImage="false" />
     <Article />
     <Footer />
   </div>
