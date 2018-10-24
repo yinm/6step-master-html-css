@@ -8,21 +8,9 @@
         >
           LOGGER
         </a>
-
-        <button
-          type="button"
-          class="headC"
-          @click="onClick"
-        >
-          <i class="fas fa-bars" />
-          <span class="sr-only">MENU</span>
-        </button>
       </div>
 
-      <nav
-        v-if="!isHidden"
-        class="headB"
-      >
+      <nav class="headB">
         <ul>
           <li>
             <a href="#">トップ</a>
@@ -41,22 +29,6 @@
     </div>
   </header>
 </template>
-
-<script>
-  export default {
-    data() {
-      return {
-        isHidden: true,
-      }
-    },
-
-    methods: {
-      onClick() {
-        this.isHidden = !this.isHidden
-      }
-    }
-  }
-</script>
 
 <style scoped>
   header {
@@ -99,25 +71,8 @@
   }
 
   @media (max-width: 767px) {
-    .container-small {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .headC {
-      margin-right: 10px;
-      padding: 0;
-      border: none;
-      outline: none;
-      background: none;
-      font-size: 28px;
-      opacity: 0.5;
-      cursor: pointer;
-    }
-
-    .headC:hover {
-      opacity: 0.3;
+    .headB {
+      display: none;
     }
   }
 
@@ -133,10 +88,6 @@
 
     .headB ul {
       display: flex;
-    }
-
-    .headC {
-      display: none;
     }
   }
 </style>
