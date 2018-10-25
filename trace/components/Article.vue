@@ -1,6 +1,12 @@
 <template>
   <article class="post">
     <div class="container">
+      <div class="breadcrumb">
+        <a href="#">トップ</a>
+        <i class="fas fa-chevron-right" />
+        <a href="#">記事一覧</a>
+        <i class="fas fa-chevron-right" />
+      </div>
       <h1>ライフログのはじめ方</h1>
       <img
         src="/life.jpg"
@@ -40,6 +46,18 @@
     :root {
       font-size: 18px;
     }
+  }
+
+  .breadcrumb a {
+    display: inline-block;
+    padding: 0.3rem;
+    text-decoration: none;
+    color: currentColor;
+    font-size: 0.875rem;
+  }
+
+  .breadcrumb i {
+    color: #aaa;
   }
 
   h1 {
