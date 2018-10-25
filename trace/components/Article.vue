@@ -1,11 +1,11 @@
 <template>
   <article class="post">
     <div class="container">
-      <div class="breadcrumb">
-        <a href="#">トップ</a>
-        <i class="fas fa-chevron-right" />
-        <a href="#">記事一覧</a>
-        <i class="fas fa-chevron-right" />
+      <div class="bread">
+        <ol>
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="#">記事一覧</a></li>
+        </ol>
       </div>
       <h1>ライフログのはじめ方</h1>
       <img
@@ -48,16 +48,30 @@
     }
   }
 
-  .breadcrumb a {
-    display: inline-block;
-    padding: 0.3rem;
-    text-decoration: none;
-    color: currentColor;
-    font-size: 0.875rem;
+  .bread ol {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
-  .breadcrumb i {
-    color: #aaa;
+  .bread a {
+    display: block;
+    padding: 5px;
+    color: inherit;
+    font-size: 0.875rem;
+    text-decoration: none;
+  }
+
+  .bread a::after {
+    margin-left: 10px;
+    content: '\f054';
+    font-family: 'FontAwesome';
+    opacity: 0.3;
+  }
+
+  .bread a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   h1 {
