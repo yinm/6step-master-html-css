@@ -5,8 +5,19 @@
       <p class="about-description">LOGGERはライフログに関する情報の発信、アプリ開発、データの分析、ユーザーサポートを行うために設立された会社です。ライフログのサービスやデータを活用することで、日々の生活を楽しみ、よりよくしていくことを目指しています。</p>
       <p class="about-description">近年はグローバルワールドネットワークとも提携し、国内のみならず、海外展開も含めて活動の場をひろげています。</p>
     </div>
+    <ContentForAbout />
   </main>
 </template>
+
+<script>
+import ContentForAbout from '~/components/ContentForAbout'
+
+export default {
+  components: {
+    ContentForAbout,
+  }
+}
+</script>
 
 <style scoped>
   .container {
