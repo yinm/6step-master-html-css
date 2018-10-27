@@ -1,56 +1,98 @@
 <template>
-  <section>
+  <aside class="history">
     <div class="container">
       <div class="photo" />
-      <table class="history">
-        <th class="history-title">History</th>
-        <tr>
-          <td class="history-date">2010年4月</td>
-          <td class="history-text">LOGGER設立</td>
-        </tr>
-        <tr>
-          <td>2012年6月</td>
-          <td>オンラインマガジン創刊</td>
-        </tr>
-        <tr>
-          <td>2014年12月</td>
-          <td>海外企業と提携してオンラインデータ共有事業をスタート</td>
-        </tr>
-        <tr>
-          <td>2015年1月</td>
-          <td>ライフログアプリをリリース</td>
-        </tr>
-      </table>
+      <div class="text">
+        <h2>History</h2>
+        <table>
+          <tr>
+            <th>2010年4月</th>
+            <td>LOGGER設立</td>
+          </tr>
+          <tr>
+            <th>2012年6月</th>
+            <td>オンラインマガジン創刊</td>
+          </tr>
+          <tr>
+            <th>2014年12月</th>
+            <td>海外企業と提携してオンラインデータ共有事業をスタート</td>
+          </tr>
+          <tr>
+            <th>2015年1月</th>
+            <td>ライフログアプリをリリース</td>
+          </tr>
+        </table>
+      </div>
     </div>
-  </section>
+  </aside>
 </template>
 
 <style scoped>
-  section {
+  .history {
     background-color: var(--main-color);
+    color: var(--text-bright-color);
+  }
+
+  .text {
+    padding: 20px;
+  }
+
+  .history h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
   }
 
   .photo {
-    min-height: 200px;
+    min-height: 300px;
     background-image: url("/plant.jpg");
     background-position: center;
     background-size: cover;
   }
 
-  .history {
-    color: var(--text-bright-color);
+  .history table {
+    border-collapse: collapse;
+    border-top: solid 1px var(--gray-color);
+    font-size: 0.875rem;
   }
 
-  .history-title {
-    border-bottom: solid 1px currentColor;
+  .history th,
+  .history td {
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    border-bottom: solid 1px var(--gray-color);
   }
 
-  .history tr {
-    border-bottom: solid 1px currentColor;
+  .history th {
+    padding-right: 1rem;
+    text-align: left;
+    word-break: keep-all;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  @media (max-width: 599px) {
+    :root {
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 600px) and (max-width: 799px) {
+    :root {
+      font-size: 16px;
+    }
   }
 
   @media (min-width: 800px) {
-    .container {
+    :root {
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .history .container {
       display: flex;
       max-width: var(--large-width);
       margin-left: auto;
@@ -61,7 +103,7 @@
       flex: 3;
     }
 
-    .history {
+    .text {
       flex: 2;
       padding: 50px;
     }
