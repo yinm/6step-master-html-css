@@ -18,6 +18,15 @@
         </div>
       </div>
     </div>
+
+    <section class="map">
+      <h2>LOCATION</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.6566075690303!2d139.80851171557487!3d35.71006703599668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ed6f9ddd30f%3A0x918ba47a310c8809!2z5p2x5Lqs44K944Op44Oe44OB!5e0!3m2!1sja!2sjp!4v1540707001406"
+        frameborder="0"
+        style="border:0"
+        allowfullscreen/>
+    </section>
   </article>
 </template>
 
@@ -105,5 +114,18 @@
     .contact:first-child {
       margin-right: 20px;
     }
+  }
+
+  .map h2 {
+    margin: 0;
+    padding: 20px;
+    background-color: var(--main-color);
+    color: var(--text-bright-color);
+    text-align: center;
+  }
+
+  iframe {
+    width: 100%;
+    height: 395px;
   }
 </style>
