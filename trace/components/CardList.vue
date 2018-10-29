@@ -1,5 +1,6 @@
 <template>
   <section class="listA">
+    <h1 class="sr-only">RECENT POSTS</h1>
     <div class="container">
       <Card :thumb-src="'/p01.jpg'">
         <h2 slot="title">黄色い花を飾ってみた</h2>
@@ -64,12 +65,14 @@
 </script>
 
 <style scoped>
+  h1 {
+    text-align: center;
+  }
+
   .container {
     display: flex;
     flex-wrap: wrap;
-    padding: 30px 15px;
     max-width: var(--large-width);
-    margin-left: auto;
-    margin-right: auto;
+    margin: 30px auto;
   }
 </style>

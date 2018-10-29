@@ -26,7 +26,7 @@
 
 <style scoped>
   article {
-    max-width: 333px;
+    flex: 1 1 300px;
   }
 
   a {
