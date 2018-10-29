@@ -1,20 +1,36 @@
 <template>
-  <a href="#">
-    <div class="photo" />
-    <div class="text-container">
-      <h2>黄色い花を飾ってみた</h2>
-      <p>黄色い花を部屋に飾るといいことがあるかもしれません。その理由は…</p>
-    </div>
-  </a>
+  <article>
+    <a href="#">
+      <div
+        :style="{ backgroundImage: 'url(' + thumbSrc + ')' }"
+        class="photo"
+      />
+      <div class="text">
+        <h2>黄色い花を飾ってみた</h2>
+        <p>黄色い花を部屋に飾るといいことがあるかもしれません。その理由は…</p>
+      </div>
+    </a>
+  </article>
 </template>
+
+<script>
+  export default {
+    props: {
+      thumbSrc: {
+        type: String,
+        default: ''
+      }
+    }
+  }
+</script>
 
 <style scoped>
   a {
-    display: block;
     margin: 10px;
+    display: block;
     border: solid 1px var(--gray-color);
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
   }
 
   a:hover {
@@ -22,16 +38,13 @@
   }
 
   .photo {
-    height: 150px;
-    width: 100%;
-    background-image: url('/p01.jpg');
+    min-height: 150px;
     background-position: center;
     background-size: cover;
   }
 
-  .text-container {
-    padding-left: 10px;
-    padding-right: 10px;
+  .text {
+    margin: 10px;
   }
 
   h2 {
@@ -40,6 +53,6 @@
 
   p {
     font-size: 14px;
-    opacity: 0.7;
+    opacity: 0.8;
   }
 </style>

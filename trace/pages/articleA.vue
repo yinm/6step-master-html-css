@@ -2,20 +2,20 @@
   <div>
     <Header />
     <Hero2 />
-    <Card />
+    <CardList />
     <Footer />
   </div>
 </template>
 
 <script>
-  import Card from '~/components/Card'
+  import CardList from '~/components/CardList'
   import Footer from '~/components/Footer'
   import Header from '~/components/Header'
   import Hero2 from '~/components/Hero2'
 
   export default {
     components: {
-      Card,
+      CardList,
       Footer,
       Header,
       Hero2,
