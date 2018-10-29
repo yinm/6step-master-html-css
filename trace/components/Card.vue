@@ -6,8 +6,8 @@
         class="photo"
       />
       <div class="text">
-        <h2>黄色い花を飾ってみた</h2>
-        <p>黄色い花を部屋に飾るといいことがあるかもしれません。その理由は…</p>
+        <slot name="title" />
+        <slot name="description" />
       </div>
     </a>
   </article>
@@ -25,6 +25,10 @@
 </script>
 
 <style scoped>
+  article {
+    max-width: 333px;
+  }
+
   a {
     margin: 10px;
     display: block;
