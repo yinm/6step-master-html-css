@@ -1,5 +1,5 @@
 <template>
-  <section class="conA">
+  <section class="conA compact">
     <div class="container">
       <h1>LOGGER</h1>
       <p>美味しく楽しくライフログ</p>
@@ -14,12 +14,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 450px;
+    height: 100vh;
+    min-height: 450px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/balloon.jpg");
     background-position: center;
     background-size: cover;
     text-align: center;
     color: var(--text-bright-color);
+  }
+
+  .compact {
+    height: 450px;
+    min-height: 0;
   }
 
   .conA img {
