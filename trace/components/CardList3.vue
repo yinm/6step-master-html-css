@@ -72,6 +72,7 @@
   .container {
     display: flex;
     flex-wrap: wrap;
-    max-width: var(--extra-large-width);
+    max-width: none;
+    margin: 2px auto;
   }
 </style>

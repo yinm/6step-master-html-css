@@ -1,10 +1,12 @@
 <template>
   <article>
     <a
-      :style="{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(' + thumbSrc + ')' }"
-      class="photo"
       href="#"
     >
+      <div
+        :style="{ backgroundImage: 'url(' + thumbSrc + ')' }"
+        class="photo"
+      />
       <div class="text">
         <slot name="title" />
         <slot name="description" />
@@ -27,18 +29,17 @@
 <style scoped>
   article {
     flex: 1 1 250px;
-    margin-top: 3px;
     display: flex;
   }
 
   a {
+    position: relative;
     flex: 1;
-    display: flex;
-    align-items: flex-end;
     margin: 2px;
+    display: block;
     border: solid 1px var(--gray-color);
-    min-height: 250px;
-    color: #fff;
+    background-color: #000;
+    color: inherit;
     text-decoration: none;
   }
 
@@ -47,13 +48,18 @@
   }
 
   .photo {
+    min-height: 250px;
     background-position: center;
     background-size: cover;
+    opacity: 0.6;
   }
 
   .text {
-    margin-left: 10px;
-    margin-right: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+    color: var(--text-bright-color);
   }
 
   h2 {
@@ -62,9 +68,14 @@
   }
 
   p {
-    margin-top: 0;
-    margin-bottom: 10px;
+    margin: 0;
     font-size: 14px;
     opacity: 0.8;
+  }
+
+  @media (min-width: 1000px) {
+    article {
+      flex: 1 1 25%;
+    }
   }
 </style>
