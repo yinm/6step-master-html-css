@@ -15,6 +15,7 @@
   --gray-color: #ddd;
   --middle-width: 800px;
   --large-width: 1000px;
+  --extra-large-width: 1200px;
 }
 
 .sr-only {
