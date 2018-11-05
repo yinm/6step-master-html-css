@@ -15,6 +15,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    min-height: 450px;
     background-image: linear-gradient(
       rgba(0, 0, 0, 0.1),
       rgba(0, 0, 0, 0.1)
