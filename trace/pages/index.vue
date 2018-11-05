@@ -16,7 +16,6 @@
 
 <style>
   body {
-    margin: 0;
     font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
   }
 </style>

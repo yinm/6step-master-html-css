@@ -8,16 +8,20 @@
 </template>
 
 <style scoped>
-  h1 {
-    margin: 8px;
-    font-size: 15vw;
+  .conA {
     text-align: center;
   }
 
+  h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 15vw;
+  }
+
   p {
-    margin: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 18px;
-    text-align: center;
   }
 
   @media (min-width: 768px) {
