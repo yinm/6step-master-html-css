@@ -7,6 +7,7 @@
       >
       <h1>LOGGER</h1>
       <p>美味しく楽しくライフログ</p>
+      <a href="#">ライフログを始める</a>
     </div>
   </section>
 </template>
@@ -47,6 +48,22 @@
     margin-top: 0;
     margin-bottom: 0;
     font-size: 18px;
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: solid 3px currentColor;
+    border-radius: 6px;
+    background-color: var(--accent-color);
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
   }
 
   @media (min-width: 768px) {
