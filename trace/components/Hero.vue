@@ -11,7 +11,18 @@
   @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
   .conA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ), url("/fruits.jpg");
+    background-position: center;
+    background-size: cover;
     text-align: center;
+    color: var(--text-bright-color);
   }
 
   h1 {
