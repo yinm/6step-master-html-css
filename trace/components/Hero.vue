@@ -8,6 +8,8 @@
 </template>
 
 <style scoped>
+  @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
   .conA {
     text-align: center;
   }
@@ -15,7 +17,10 @@
   h1 {
     margin-top: 0;
     margin-bottom: 10px;
+    padding-left: 0.2em;
     font-size: 15vw;
+    letter-spacing: 0.2em;
+    font-family: 'Montserrat', sans-serif;
   }
 
   p {
