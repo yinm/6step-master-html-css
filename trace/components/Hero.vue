@@ -17,10 +17,10 @@
   h1 {
     margin-top: 0;
     margin-bottom: 10px;
-    padding-left: 0.2em;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15vw;
     letter-spacing: 0.2em;
-    font-family: 'Montserrat', sans-serif;
+    margin-left: 0.2em;
   }
 
   p {
