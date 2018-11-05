@@ -58,7 +58,7 @@
     border-radius: 6px;
     background-color: var(--accent-color);
     font-size: 14px;
-    color: #fff;
+    color: var(--text-bright-color);
     text-decoration: none;
   }
 
