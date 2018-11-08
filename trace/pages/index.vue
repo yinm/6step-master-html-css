@@ -1,18 +1,18 @@
 <template>
   <div>
     <Hero />
-    <Concept />
+    <Concepts />
   </div>
 </template>
 
 <script>
   import Hero from '~/components/Hero'
-  import Concept from '~/components/Concept'
+  import Concepts from '~/components/Concepts'
 
   export default {
     components: {
       Hero,
-      Concept
+      Concepts
     }
   }
 </script>
