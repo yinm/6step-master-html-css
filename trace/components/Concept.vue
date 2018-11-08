@@ -34,7 +34,8 @@
 
 <style scoped>
   .container {
-    padding: 80px 20px;
+    padding-top: 80px;
+    padding-bottom: 20px;
   }
 
   .icon {
@@ -50,11 +51,10 @@
   }
 
   .text {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
     text-align: center;
-  }
-
-  .text:not(:last-child) {
-    margin-bottom: 60px;
   }
 
   h2 {
@@ -83,9 +83,9 @@
   @media (min-width: 768px) {
     .container {
       display: flex;
-      margin: 0 auto;
-      padding-bottom: 0;
       max-width: var(--large-width);
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .text {
