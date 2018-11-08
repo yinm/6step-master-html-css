@@ -1,8 +1,8 @@
 <template>
   <section class="conB">
     <div class="container">
-      <i class="far fa-chart-bar icon-mask" />
       <div class="text">
+        <i class="far fa-chart-bar icon" />
         <h2>ライフログって何？</h2>
         <p>日常のあれこれを記録していくライフログ。いろいろなものが見えてきます。</p>
         <a href="#">
@@ -15,18 +15,20 @@
 </template>
 
 <style scoped>
-  .container {
-    text-align: center;
-  }
-
-  .icon-mask {
+  .icon {
+    display: inline-block;
     margin-bottom: 20px;
     font-size: 40px;
     width: 2em;
     line-height: 2em;
     border-radius: 50%;
+    text-align: center;
     background-color: var(--icon-bk-color);
     color: var(--icon-color);
+  }
+
+  .text {
+    text-align: center;
   }
 
   h2 {
