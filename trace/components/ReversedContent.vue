@@ -15,8 +15,12 @@
 </template>
 
 <style scoped>
-  .conD {
-    margin-top: 2px;
+  .container {
+    padding-top: 2px;
+  }
+
+  .text {
+    padding: 20px;
   }
 
   h2 {
@@ -27,7 +31,7 @@
 
   p {
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.8;
     opacity: 0.8;
@@ -35,14 +39,22 @@
 
   a {
     display: inline-block;
+    margin-top: 20px;
     padding: 10px 30px;
+    box-shadow: 0 0 0 1px #888;
     border: solid 3px currentColor;
     border-radius: 6px;
-    box-shadow: 0 0 1px #000;
     background-color: var(--accent-color);
     color: var(--text-bright-color);
-    text-decoration: none;
     font-size: 14px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    );
   }
 
   .photo {
@@ -52,21 +64,14 @@
     background-size: cover;
   }
 
-  .text {
-    padding: 20px;
-  }
-
   @media (min-width: 768px) {
-    .conD {
-      margin-top: 40px;
-      margin-bottom: 40px;
-    }
-
     .container {
       display: flex;
       max-width: var(--large-width);
       margin-left: auto;
       margin-right: auto;
+      padding-top: 40px;
+      padding-bottom: 40px;
     }
 
     .photo {
