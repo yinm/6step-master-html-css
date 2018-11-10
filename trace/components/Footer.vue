@@ -14,6 +14,10 @@
         <footer-content :links="supportLinks">SUPPORT</footer-content>
         <footer-content :links="contentsLinks">CONTENTS</footer-content>
       </nav>
+
+      <div class="footC">
+        <p>© LOGGER corp. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 </template>
@@ -122,6 +126,12 @@
     color: inherit;
     font-size: 14px;
     text-decoration: none;
+  }
+
+  .footC p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
   }
 
   @media (min-width: 768px) {
