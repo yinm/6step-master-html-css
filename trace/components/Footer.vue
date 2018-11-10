@@ -11,6 +11,12 @@
 </template>
 
 <style scoped>
+  .container {
+    padding: 40px 20px;
+    background-color: var(--dark-main-color);
+    color: var(--text-bright-color);
+  }
+
   h2 {
     margin-top: 0;
     margin-bottom: 10px;
