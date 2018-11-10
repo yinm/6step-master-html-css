@@ -4,6 +4,7 @@
     <Concepts />
     <Content />
     <ReversedContent />
+    <Footer />
   </div>
 </template>
 
@@ -11,6 +12,7 @@
   import Hero from '~/components/Hero'
   import Concepts from '~/components/Concepts'
   import Content from '~/components/Content'
+  import Footer from '~/components/Footer'
   import ReversedContent from '~/components/ReversedContent'
 
   export default {
@@ -18,6 +20,7 @@
       Hero,
       Concepts,
       Content,
+      Footer,
       ReversedContent
     }
   }
