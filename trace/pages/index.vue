@@ -2,17 +2,20 @@
   <div>
     <Hero />
     <Concepts />
+    <Content />
   </div>
 </template>
 
 <script>
   import Hero from '~/components/Hero'
   import Concepts from '~/components/Concepts'
+  import Content from '~/components/Content'
 
   export default {
     components: {
       Hero,
-      Concepts
+      Concepts,
+      Content
     }
   }
 </script>
