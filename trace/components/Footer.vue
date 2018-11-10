@@ -1,19 +1,21 @@
 <template>
   <footer>
     <div class="container">
-      <div class="footA">
-        <h2>LOGGER</h2>
-        <p>
-          〒000-0000 東京都中央区杉並3-3-3-403<br>
-          <a href="#">http://logger.nett/</a>
-        </p>
-      </div>
+      <div class="wrapper">
+        <div class="footA">
+          <h2>LOGGER</h2>
+          <p>
+            〒000-0000 東京都中央区杉並3-3-3-403<br>
+            <a href="#">http://logger.nett/</a>
+          </p>
+        </div>
 
-      <nav class="footB">
-        <footer-content :links="aboutLinks">ABOUT</footer-content>
-        <footer-content :links="supportLinks">SUPPORT</footer-content>
-        <footer-content :links="contentsLinks">CONTENTS</footer-content>
-      </nav>
+        <nav class="footB">
+          <footer-content :links="aboutLinks">ABOUT</footer-content>
+          <footer-content :links="supportLinks">SUPPORT</footer-content>
+          <footer-content :links="contentsLinks">CONTENTS</footer-content>
+        </nav>
+      </div>
 
       <div class="footC">
         <p>© LOGGER corp. All rights reserved.</p>
@@ -135,8 +137,23 @@
   }
 
   @media (min-width: 768px) {
+    .container {
+      max-width: var(--large-width);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .wrapper {
+      display: flex;
+    }
+
+    .footA {
+      flex: 2;
+    }
+
     .footB {
       display: flex;
+      flex: 3;
     }
 
     .footB div:not(:first-child) {
