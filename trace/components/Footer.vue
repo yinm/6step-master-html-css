@@ -11,10 +11,13 @@
 </template>
 
 <style scoped>
+  footer {
+    color: var(--text-bright-color);
+    background-color: var(--dark-main-color);
+  }
+
   .container {
     padding: 40px 20px;
-    background-color: var(--dark-main-color);
-    color: var(--text-bright-color);
   }
 
   h2 {
