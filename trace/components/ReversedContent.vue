@@ -76,11 +76,11 @@
     }
 
     .photo {
-      flex: 0 1 400px;
+      flex: 0 0 400px;
     }
 
     .text {
-      flex: 2;
+      flex: 1;
       padding: 50px;
     }
   }
