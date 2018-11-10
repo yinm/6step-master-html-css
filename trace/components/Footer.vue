@@ -10,40 +10,86 @@
       </div>
 
       <nav class="footB">
-        <div>
-          <h3>ABOUT</h3>
-          <ul>
-            <li><a href="#">設立</a></li>
-            <li><a href="#">所在地</a></li>
-            <li><a href="#">地図</a></li>
-            <li><a href="#">スタッフ</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3>SUPPORT</h3>
-          <ul>
-            <li><a href="#">ダウンロード</a></li>
-            <li><a href="#">マニュアル</a></li>
-            <li><a href="#">よくある質問</a></li>
-            <li><a href="#">お問い合わせ</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3>CONTENTS</h3>
-          <ul>
-            <li><a href="#">お知らせ</a></li>
-            <li><a href="#">ビジネス</a></li>
-            <li><a href="#">プロフィール</a></li>
-            <li><a href="#">開発者</a></li>
-            <li><a href="#">ブログ</a></li>
-          </ul>
-        </div>
+        <footer-content :links="aboutLinks">ABOUT</footer-content>
+        <footer-content :links="supportLinks">SUPPORT</footer-content>
+        <footer-content :links="contentsLinks">CONTENTS</footer-content>
       </nav>
     </div>
   </footer>
 </template>
+
+<script>
+  import FooterContent from './FooterContent'
+
+  export default {
+    components: {
+      FooterContent
+    },
+
+    data() {
+      return {
+        aboutLinks: [
+          {
+            name: '設立',
+            anchor: '#'
+          },
+          {
+            name: '所在地',
+            anchor: '#'
+          },
+          {
+            name: '地図',
+            anchor: '#'
+          },
+          {
+            name: 'スタッフ',
+            anchor: '#'
+          }
+        ],
+        supportLinks: [
+          {
+            name: 'ダウンロード',
+            anchor: '#'
+          },
+          {
+            name: 'マニュアル',
+            anchor: '#'
+          },
+          {
+            name: 'よくある質問',
+            anchor: '#'
+          },
+          {
+            name: 'お問い合わせ',
+            anchor: '#'
+          }
+        ],
+        contentsLinks: [
+          {
+            name: 'お知らせ',
+            anchor: '#'
+          },
+          {
+            name: 'ビジネス',
+            anchor: '#'
+          },
+          {
+            name: 'プロフィール',
+            anchor: '#'
+          },
+          {
+            name: '開発者',
+            anchor: '#'
+          },
+          {
+            name: 'ブログ',
+            anchor: '#'
+          }
+        ]
+      }
+    }
+  }
+</script>
 
 <style scoped>
   footer {
@@ -78,42 +124,9 @@
     text-decoration: none;
   }
 
-  .footB div {
-    margin-bottom: 20px;
-  }
-
-  h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    border-bottom: solid 1px currentColor;
-    font-size: 14px;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .footB a {
-    display: block;
-    padding: 5px;
-    color: inherit;
-    font-size: 12px;
-    text-decoration: none;
-  }
-
-  .footB a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
   @media (min-width: 768px) {
     .footB {
       display: flex;
-    }
-
-    .footB div {
-      flex: 1;
     }
 
     .footB div:not(:first-child) {
