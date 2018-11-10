@@ -1,27 +1,25 @@
 <template>
   <footer>
     <div class="container">
-      <h2>LOGGER</h2>
-      <p>
-        〒000-0000 東京都中央区杉並3-3-3-403<br>
-        <a href="#">http://logger.nett/</a>
-      </p>
+      <div class="footA">
+        <h2>LOGGER</h2>
+        <p>
+          〒000-0000 東京都中央区杉並3-3-3-403<br>
+          <a href="#">http://logger.nett/</a>
+        </p>
+      </div>
 
-      <h3>ABOUT</h3>
-      <ul>
-        <li>
-          <a href="#">設立</a>
-        </li>
-        <li>
-          <a href="#">所在地</a>
-        </li>
-        <li>
-          <a href="#">地図</a>
-        </li>
-        <li>
-          <a href="#">スタッフ</a>
-        </li>
-      </ul>
+      <nav class="footB">
+        <div>
+          <h3>ABOUT</h3>
+          <ul>
+            <li><a href="#">設立</a></li>
+            <li><a href="#">所在地</a></li>
+            <li><a href="#">地図</a></li>
+            <li><a href="#">スタッフ</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
   </footer>
 </template>
@@ -34,6 +32,10 @@
 
   .container {
     padding: 40px 20px;
+  }
+
+  .footA {
+    margin-bottom: 30px;
   }
 
   h2 {
@@ -55,30 +57,32 @@
     text-decoration: none;
   }
 
+  .footB div {
+    margin-bottom: 20px;
+  }
+
   h3 {
-    margin-top: 30px;
+    margin-top: 0;
     margin-bottom: 10px;
     border-bottom: solid 1px currentColor;
     font-size: 14px;
   }
 
   ul {
-    margin-top: 0;
-    margin-bottom: 20px;
-    padding-left: 0;
-    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
-  li a {
+  .footB a {
     display: block;
     padding: 5px;
+    color: inherit;
     font-size: 12px;
+    text-decoration: none;
   }
 
-  li a:hover {
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
-    );
+  .footB a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 </style>
