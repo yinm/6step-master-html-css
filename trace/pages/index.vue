@@ -3,6 +3,7 @@
     <Hero />
     <Concepts />
     <Content />
+    <ReversedContent />
   </div>
 </template>
 
@@ -10,12 +11,14 @@
   import Hero from '~/components/Hero'
   import Concepts from '~/components/Concepts'
   import Content from '~/components/Content'
+  import ReversedContent from '~/components/ReversedContent'
 
   export default {
     components: {
       Hero,
       Concepts,
-      Content
+      Content,
+      ReversedContent
     }
   }
 </script>
