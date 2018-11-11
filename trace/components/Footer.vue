@@ -13,7 +13,7 @@
             <li>
               <a href="#">
                 <i
-                  class="aria-hidden fab fa-twitter icon"
+                  class="aria-hidden fab fa-twitter"
                   title="Twitter"
                 />
                 <span class="sr-only">Twitter</span>
@@ -22,7 +22,7 @@
             <li>
               <a href="#">
                 <i
-                  class="aria-hidden fab fa-facebook-f icon"
+                  class="aria-hidden fab fa-facebook-f"
                   title="facebook"
                 />
                 <span class="sr-only">Facebook</span>
@@ -31,7 +31,7 @@
             <li>
               <a href="#">
                 <i
-                  class="aria-hidden fab fa-google-plus-g icon"
+                  class="aria-hidden fab fa-google-plus-g"
                   title="Google Plus"
                 />
                 <span class="sr-only">Google Plus</span>
@@ -40,7 +40,7 @@
             <li>
               <a href="#">
                 <i
-                  class="aria-hidden fab fa-instagram icon"
+                  class="aria-hidden fab fa-instagram"
                   title="Instagram"
                 />
                 <span class="sr-only">Instagram</span>
@@ -49,7 +49,7 @@
             <li>
               <a href="#">
                 <i
-                  class="aria-hidden fab fa-youtube icon"
+                  class="aria-hidden fab fa-youtube"
                   title="YouTube"
                 />
                 <span class="sr-only">YouTube</span>
@@ -184,30 +184,34 @@
     font-size: 12px;
   }
 
+  .footD {
+    margin-top: 20px;
+  }
+
   .footD ul {
     display: flex;
-    margin-top: 20px;
+    margin: 0;
     padding: 0;
     list-style: none;
   }
 
-  .footD li {
-    margin-right: 7px;
-  }
-
-  .icon {
+  .footD a {
+    display: block;
+    margin-right: 8px;
+    padding: 0;
+    color: inherit;
+    font-size: 16px;
+    text-decoration: none;
     border: solid 1px currentColor;
+    width: 2em;
+    line-height: 2em;
     border-radius: 50%;
-    font-size: 15px;
-    width: 2.2em;
-    line-height: 2.2em;
     text-align: center;
   }
 
-  .icon:hover {
+  .footD a:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
-
 
   @media (min-width: 768px) {
     .container {
