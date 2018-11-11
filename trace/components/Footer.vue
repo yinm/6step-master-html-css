@@ -8,33 +8,55 @@
           <a href="#">http://logger.nett/</a>
         </p>
 
-        <ul class="footD">
-          <li>
-            <a href="#">
-              <i class="fab fa-twitter" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-facebook-f" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-google-plus-g" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-instagram" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-youtube" />
-            </a>
-          </li>
-        </ul>
+        <nav class="footD">
+          <ul>
+            <li>
+              <a href="#">
+                <i
+                  class="aria-hidden fab fa-twitter"
+                  title="Twitter"
+                />
+                <span class="sr-only">Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i
+                  class="aria-hidden fab fa-facebook-f"
+                  title="facebook"
+                />
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i
+                  class="aria-hidden fab fa-google-plus-g"
+                  title="Google Plus"
+                />
+                <span class="sr-only">Google Plus</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i
+                  class="aria-hidden fab fa-instagram"
+                  title="Instagram"
+                />
+                <span class="sr-only">Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i
+                  class="aria-hidden fab fa-youtube"
+                  title="YouTube"
+                />
+                <span class="sr-only">YouTube</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
 
       <nav class="footB">
