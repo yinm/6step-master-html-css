@@ -13,7 +13,7 @@
             <li>
               <a href="#">
                 <i
-                  class="aria-hidden fab fa-twitter"
+                  class="aria-hidden fab fa-twitter icon"
                   title="Twitter"
                 />
                 <span class="sr-only">Twitter</span>
@@ -22,7 +22,7 @@
             <li>
               <a href="#">
                 <i
-                  class="aria-hidden fab fa-facebook-f"
+                  class="aria-hidden fab fa-facebook-f icon"
                   title="facebook"
                 />
                 <span class="sr-only">Facebook</span>
@@ -31,7 +31,7 @@
             <li>
               <a href="#">
                 <i
-                  class="aria-hidden fab fa-google-plus-g"
+                  class="aria-hidden fab fa-google-plus-g icon"
                   title="Google Plus"
                 />
                 <span class="sr-only">Google Plus</span>
@@ -40,7 +40,7 @@
             <li>
               <a href="#">
                 <i
-                  class="aria-hidden fab fa-instagram"
+                  class="aria-hidden fab fa-instagram icon"
                   title="Instagram"
                 />
                 <span class="sr-only">Instagram</span>
@@ -49,7 +49,7 @@
             <li>
               <a href="#">
                 <i
-                  class="aria-hidden fab fa-youtube"
+                  class="aria-hidden fab fa-youtube icon"
                   title="YouTube"
                 />
                 <span class="sr-only">YouTube</span>
@@ -183,6 +183,31 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
   }
+
+  .footD ul {
+    display: flex;
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .footD li {
+    margin-right: 7px;
+  }
+
+  .icon {
+    border: solid 1px currentColor;
+    border-radius: 50%;
+    font-size: 15px;
+    width: 2.2em;
+    line-height: 2.2em;
+    text-align: center;
+  }
+
+  .icon:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
 
   @media (min-width: 768px) {
     .container {
