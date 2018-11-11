@@ -7,55 +7,8 @@
           〒000-0000 東京都中央区杉並3-3-3-403<br>
           <a href="#">http://logger.nett/</a>
         </p>
-
         <nav class="footD">
-          <ul>
-            <li>
-              <a href="#">
-                <i
-                  class="aria-hidden fab fa-twitter"
-                  title="Twitter"
-                />
-                <span class="sr-only">Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i
-                  class="aria-hidden fab fa-facebook-f"
-                  title="facebook"
-                />
-                <span class="sr-only">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i
-                  class="aria-hidden fab fa-google-plus-g"
-                  title="Google Plus"
-                />
-                <span class="sr-only">Google Plus</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i
-                  class="aria-hidden fab fa-instagram"
-                  title="Instagram"
-                />
-                <span class="sr-only">Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i
-                  class="aria-hidden fab fa-youtube"
-                  title="YouTube"
-                />
-                <span class="sr-only">YouTube</span>
-              </a>
-            </li>
-          </ul>
+          <social-links :links="snsLinks" />
         </nav>
       </div>
 
@@ -74,10 +27,12 @@
 
 <script>
   import FooterContent from './FooterContent'
+  import SocialLinks from './SocialLinks'
 
   export default {
     components: {
-      FooterContent
+      FooterContent,
+      SocialLinks
     },
 
     data() {
@@ -139,6 +94,28 @@
             name: 'ブログ',
             anchor: '#'
           }
+        ],
+        snsLinks: [
+          {
+            iconClass: 'fab fa-twitter',
+            title: 'Twitter'
+          },
+          {
+            iconClass: 'fab fa-facebook-f',
+            title: 'facebook'
+          },
+          {
+            iconClass: 'fab fa-google-plus-g',
+            title: 'Google Plus'
+          },
+          {
+            iconClass: 'fab fa-instagram',
+            title: 'Instagram'
+          },
+          {
+            iconClass: 'fab fa-youtube',
+            title: 'YouTube'
+          },
         ]
       }
     }
@@ -186,31 +163,6 @@
 
   .footD {
     margin-top: 20px;
-  }
-
-  .footD ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .footD a {
-    display: block;
-    margin-right: 8px;
-    padding: 0;
-    color: inherit;
-    font-size: 16px;
-    text-decoration: none;
-    border: solid 1px currentColor;
-    width: 2em;
-    line-height: 2em;
-    border-radius: 50%;
-    text-align: center;
-  }
-
-  .footD a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
   }
 
   @media (min-width: 768px) {
