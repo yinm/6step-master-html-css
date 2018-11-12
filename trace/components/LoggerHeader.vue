@@ -70,6 +70,7 @@ li a:hover {
 @media (min-width: 768px) {
   .container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     max-width: 1000px;
     margin-left: auto;
@@ -78,9 +79,6 @@ li a:hover {
 
   ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
   }
 }
 </style>
