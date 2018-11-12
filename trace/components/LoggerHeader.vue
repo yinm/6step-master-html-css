@@ -7,6 +7,22 @@
       >
         LOGGER
       </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">トップ</a>
+          </li>
+          <li>
+            <a href="#">コンテンツ</a>
+          </li>
+          <li>
+            <a href="#">ABOUT</a>
+          </li>
+          <li>
+            <a href="#">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 </template>
@@ -31,5 +47,26 @@ header {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li a {
+  display: block;
+  padding: 15px;
+  font-size: 12px;
+  color: inherit;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  );
 }
 </style>
