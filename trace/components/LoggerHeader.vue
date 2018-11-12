@@ -1,7 +1,12 @@
 <template>
   <header>
     <div class="container">
-      <h2>LOGGER</h2>
+      <a
+        href="index.html"
+        class="headA"
+      >
+        LOGGER
+      </a>
     </div>
   </header>
 </template>
@@ -9,16 +14,22 @@
 <style scoped>
 header {
   position: absolute;
-  background-color: #fff;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
-h2 {
+.headA {
   display: inline-block;
-  margin: 0;
-  padding: 20px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: normal;
+  line-height: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: var(--main-color);
   color: var(--text-bright-color);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
 }
 </style>
