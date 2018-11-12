@@ -66,4 +66,21 @@ ul {
 li a:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
 </style>
