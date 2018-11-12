@@ -7,7 +7,7 @@
       >
         LOGGER
       </a>
-      <nav>
+      <nav class="headB">
         <ul>
           <li>
             <a href="#">トップ</a>
@@ -55,18 +55,15 @@ ul {
   list-style: none;
 }
 
-li a {
+.headB a {
   display: block;
   padding: 15px;
-  font-size: 12px;
   color: inherit;
+  font-size: 12px;
   text-decoration: none;
 }
 
 li a:hover {
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)
-  );
+  background-color: rgba(0, 0, 0, 0.3);
 }
 </style>
