@@ -15,28 +15,47 @@
           <i
             class="fas fa-bars"
             title="MENU"
+            @click="toggleMenu"
           />
         </button>
       </div>
       <nav class="headB">
-        <ul>
-          <li>
-            <a href="#">トップ</a>
-          </li>
-          <li>
-            <a href="#">コンテンツ</a>
-          </li>
-          <li>
-            <a href="#">ABOUT</a>
-          </li>
-          <li>
-            <a href="#">お問い合わせ</a>
-          </li>
-        </ul>
+        <transition name="slide-fade">
+          <ul v-show="isOpen">
+            <li>
+              <a href="#">トップ</a>
+            </li>
+            <li>
+              <a href="#">コンテンツ</a>
+            </li>
+            <li>
+              <a href="#">ABOUT</a>
+            </li>
+            <li>
+              <a href="#">お問い合わせ</a>
+            </li>
+          </ul>
+        </transition>
       </nav>
     </div>
   </header>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      isOpen: false
+    }
+  },
+
+  methods: {
+    toggleMenu() {
+      this.isOpen = !this.isOpen
+    }
+  }
+}
+</script>
 
 <style scoped>
 header {
@@ -118,5 +137,13 @@ li a:hover {
   .headC:hover {
     opacity: 0.3;
   }
+}
+
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to {
+  transform: translateY(10px);
+  opacity: 0;
 }
 </style>
