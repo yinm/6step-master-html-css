@@ -1,14 +1,22 @@
 <template>
   <header>
     <div class="container">
-      <div class="logo-wrapper">
+      <div class="container-small">
         <a
           href="index.html"
           class="headA"
         >
           LOGGER
         </a>
-        <i class="fas fa-bars" />
+        <button
+          type="button"
+          class="headC"
+        >
+          <i
+            class="fas fa-bars"
+            title="MENU"
+          />
+        </button>
       </div>
       <nav class="headB">
         <ul>
@@ -52,23 +60,6 @@ header {
   text-decoration: none;
 }
 
-.logo-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-i {
-  margin-right: 10px;
-  font-size: 26px;
-  color: #777;
-}
-
-i:hover {
-  opacity: 0.6;
-  cursor: pointer;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -101,8 +92,31 @@ li a:hover {
     display: flex;
   }
 
-  i {
+  .headC {
     display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-small {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .headC {
+    margin-right: 10px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 28px;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  .headC:hover {
+    opacity: 0.3;
   }
 }
 </style>
