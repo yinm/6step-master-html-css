@@ -1,12 +1,15 @@
 <template>
   <header>
     <div class="container">
-      <a
-        href="index.html"
-        class="headA"
-      >
-        LOGGER
-      </a>
+      <div class="logo-wrapper">
+        <a
+          href="index.html"
+          class="headA"
+        >
+          LOGGER
+        </a>
+        <i class="fas fa-bars" />
+      </div>
       <nav class="headB">
         <ul>
           <li>
@@ -49,6 +52,23 @@ header {
   text-decoration: none;
 }
 
+.logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+i {
+  margin-right: 10px;
+  font-size: 26px;
+  color: #777;
+}
+
+i:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -79,6 +99,10 @@ li a:hover {
 
   ul {
     display: flex;
+  }
+
+  i {
+    display: none;
   }
 }
 </style>
