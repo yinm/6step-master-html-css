@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header :class="{ noHeroImage: isNoHeroImage }">
     <div class="container">
       <div class="container-small">
         <a
@@ -43,6 +43,13 @@
 
 <script>
 export default {
+  props: {
+    isNoHeroImage: {
+      type: Boolean,
+      default: false,
+    }
+  },
+
   data() {
     return {
       isOpen: false
@@ -65,6 +72,11 @@ header {
   z-index: 100;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
+}
+
+.noHeroImage {
+  position: static;
+  border-bottom: solid 1px var(--gray-color);
 }
 
 .headA {
