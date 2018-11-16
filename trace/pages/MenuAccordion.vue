@@ -9,17 +9,26 @@
     >
       アコーディオン1
     </button>
-    <div
-      v-if="isOpened"
-      :class="{ '_state-open': isOpened }"
-      class="js-accordion--target"
+
+    <transition
+      name="js-accordion"
+      @before-enter="beforeEnter"
+      @enter="enter"
+      @before-leave="beforeLeave"
+      @leave="leave"
     >
-      <div class="js-accordion--body">
-        <p>アコーディオン1の中身</p>
-        <p>アコーディオン1の中身</p>
-        <p>アコーディオン1の中身</p>
+      <div
+        v-if="isOpened"
+        :class="{ '_state-open': isOpened }"
+        class="js-accordion--target"
+      >
+        <div class="js-accordion--body">
+          <p>アコーディオン1の中身</p>
+          <p>アコーディオン1の中身</p>
+          <p>アコーディオン1の中身</p>
+        </div>
       </div>
-    </div>
+    </transition>
   </div>
 </template>
 
@@ -34,6 +43,22 @@ export default {
   methods: {
     accordionToggle() {
       this.isOpened = !this.isOpened
+    },
+
+    beforeEnter (el) {
+      el.style.height = '0'
+    },
+
+    enter (el) {
+      el.style.height = el.scrollHeight + 'px'
+    },
+
+    beforeLeave (el) {
+      el.style.height = el.scrollHeight + 'px'
+    },
+
+    leave (el) {
+      el.style.height = '0'
     }
   }
 }
@@ -110,5 +135,35 @@ body {
 
 .js-accordion--body {
   padding: 10px;
+}
+
+.js-accordion-enter-active {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: js-accordion--anime__opened;
+}
+
+.js-accordion-leave-active {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: js-accordion--anime__closed;
+}
+
+@keyframes js-accordion--anime__opened {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opactiy: 1;
+  }
+}
+
+@keyframes js-accordion--anime__closed {
+  0% {
+    opactiy: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 </style>
