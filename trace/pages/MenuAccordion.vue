@@ -2,25 +2,18 @@
   <!-- ref: http://lab.astamuse.co.jp/entry/2018/10/15/154737 -->
   <div class="js-accordion">
     <button
-      type="button"
-      class="js-accordion--trigger _state-open"
-    >
-      アコーディオン1
-    </button>
-    <div class="js-accordion--target _state-open">
-      <div class="js-accordion--body">
-        <p>アコーディオン1の中身</p>
-        <p>アコーディオン1の中身</p>
-        <p>アコーディオン1の中身</p>
-      </div>
-    </div>
-    <button
+      :class="{ '_state-open': isOpened }"
       type="button"
       class="js-accordion--trigger"
+      @click="accordionToggle"
     >
       アコーディオン1
     </button>
-    <div class="js-accordion--target">
+    <div
+      v-if="isOpened"
+      :class="{ '_state-open': isOpened }"
+      class="js-accordion--target"
+    >
       <div class="js-accordion--body">
         <p>アコーディオン1の中身</p>
         <p>アコーディオン1の中身</p>
@@ -30,7 +23,21 @@
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      isOpened: false
+    }
+  },
+
+  methods: {
+    accordionToggle() {
+      this.isOpened = !this.isOpened
+    }
+  }
+}
+</script>
 
 <style>
 body {
