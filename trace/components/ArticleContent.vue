@@ -1,6 +1,19 @@
 <template>
   <article class="post">
     <div class="container">
+      <nav>
+        <ol class="breadcrumb">
+          <li>
+            <a href="#">トップ</a>
+            <i class="fas fa-chevron-right" />
+          </li>
+          <li>
+            <a href="#">記事一覧</a>
+            <i class="fas fa-chevron-right" />
+          </li>
+        </ol>
+      </nav>
+
       <h1>ライフログのはじめ方</h1>
       <img
         src="/life.jpg"
@@ -55,5 +68,33 @@ p {
 
 img {
   max-width: 100%;
+}
+
+.breadcrumb {
+  display: flex;
+  margin-top: 0.3rem;
+  padding-left: 0.3rem;
+  padding-bottom: 0.3rem;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.breadcrumb li:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.breadcrumb i {
+  color: #aaa;
+}
+
+.breadcrumb a {
+  display: inline-block;
+  margin-right: 0.2rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+
 }
 </style>
