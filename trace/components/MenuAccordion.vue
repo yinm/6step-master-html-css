@@ -8,15 +8,13 @@
         class="accordion-opener"
         @click="toggleAccordion"
       >
-        アコーディオン1
+        <slot name="title" />
       </button>
       <div
         v-if="isOpened"
         class="accordion-body"
       >
-        <p>アコーディオンの中身</p>
-        <p>アコーディオンの中身</p>
-        <p>アコーディオンの中身</p>
+        <slot name="body" />
       </div>
     </div>
   </div>
@@ -40,7 +38,6 @@ export default {
 
 <style scoped>
 .container {
-  padding: 20px;
   width: 80vw;
   margin: 0 auto;
 }
