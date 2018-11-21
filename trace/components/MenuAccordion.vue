@@ -10,12 +10,20 @@
       >
         <slot name="title" />
       </button>
-      <div
-        v-if="isOpened"
-        class="accordion-body"
+      <transition
+        name="accordion"
+        @before-enter="beforeEnter"
+        @enter="enter"
+        @before-leave="beforeLeave"
+        @leave="leave"
       >
-        <slot name="body" />
-      </div>
+        <div
+          v-if="isOpened"
+          class="accordion-body"
+        >
+          <slot name="body" />
+        </div>
+      </transition>
     </div>
   </div>
 </template>
@@ -31,6 +39,22 @@ export default {
   methods: {
     toggleAccordion() {
       this.isOpened = !this.isOpened
+    },
+
+    beforeEnter(el) {
+      el.style.height = '0'
+    },
+
+    enter(el) {
+      el.style.height = `${el.scrollHeight}px`
+    },
+
+    beforeLeave(el) {
+      el.style.height = `${el.scrollHeight}px`
+    },
+
+    leave(el) {
+      el.style.height = '0'
     }
   }
 }
@@ -95,10 +119,8 @@ export default {
 }
 
 .accordion-body {
-  padding: 30px;
   overflow: hidden;
   transition: 0.4s ease-in-out;
 }
 </style>
-
 
