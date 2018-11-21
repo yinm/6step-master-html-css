@@ -3,26 +3,17 @@
   <div class="container">
     <div class="accordion-container">
       <button
-        type="button"
-        class="accordion-opener is-opened"
-      >
-        アコーディオン1
-      </button>
-      <div class="accordion-body">
-        <p>アコーディオンの中身</p>
-        <p>アコーディオンの中身</p>
-        <p>アコーディオンの中身</p>
-      </div>
-    </div>
-
-    <div class="accordion-container">
-      <button
+        :class="{ 'is-opened': isOpened }"
         type="button"
         class="accordion-opener"
+        @click="toggleAccordion"
       >
         アコーディオン1
       </button>
-      <div class="accordion-body">
+      <div
+        v-if="isOpened"
+        class="accordion-body"
+      >
         <p>アコーディオンの中身</p>
         <p>アコーディオンの中身</p>
         <p>アコーディオンの中身</p>
@@ -30,6 +21,22 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      isOpened: false
+    }
+  },
+
+  methods: {
+    toggleAccordion() {
+      this.isOpened = !this.isOpened
+    }
+  }
+}
+</script>
 
 <style scoped>
 .container {
